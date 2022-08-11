@@ -65,6 +65,12 @@ class LocationLinux extends LocationPlatform {
   }
 
   @override
+  Future<bool?> setBackgroundActivated(bool activated) {
+    // TODO: implement setBackgroundActivated
+    throw UnimplementedError();
+  }
+
+  @override
   Stream<LocationData?> onLocationChanged({bool inBackground = false}) {
     // TODO: implement onLocationChanged
     throw UnimplementedError();

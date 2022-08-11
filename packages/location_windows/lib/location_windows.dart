@@ -68,4 +68,10 @@ class LocationWindows extends LocationPlatform {
     // TODO: implement updateBackgroundNotification
     throw UnimplementedError();
   }
+
+  @override
+  Future<bool?> setBackgroundActivated(bool activated) {
+    // TODO: implement setBackgroundActivated
+    throw UnimplementedError();
+  }
 }

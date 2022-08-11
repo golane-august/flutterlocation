@@ -218,3 +218,12 @@ Future<bool> updateBackgroundNotification({
   }
   return response;
 }
+
+/// Set background permission activated.
+Future<bool> setBackgroundActivated(bool activated) async {
+  final response = await _platform.setBackgroundActivated(activated);
+  if (response == null) {
+    throw Exception('Error while requesting background permission');
+  }
+  return response;
+}

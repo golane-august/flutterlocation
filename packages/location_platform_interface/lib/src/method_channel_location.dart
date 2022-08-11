@@ -96,4 +96,9 @@ class MethodChannelLocation extends LocationPlatform {
       ),
     );
   }
+
+  @override
+  Future<bool?> setBackgroundActivated(bool activated) {
+    return _api.setBackgroundActivated(activated);
+  }
 }

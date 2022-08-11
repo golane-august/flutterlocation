@@ -107,4 +107,7 @@ class LocationWeb extends LocationPlatform {
   }) async {
     return true;
   }
+
+  @override
+  Future<bool?> setBackgroundActivated(bool activated) async => true;
 }

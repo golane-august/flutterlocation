@@ -528,7 +528,6 @@ class LocationPlugin : FlutterPlugin, ActivityAware, LocationListener,
         return true
     }
 
-
     override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
         val inBackground = arguments as Boolean
         eventSink = events
